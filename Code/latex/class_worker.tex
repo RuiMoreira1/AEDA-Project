@@ -1,0 +1,72 @@
+\hypertarget{class_worker}{}\doxysection{Worker Class Reference}
+\label{class_worker}\index{Worker@{Worker}}
+
+
+{\ttfamily \#include $<$Workers.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_worker_ae4e05a4d3b1454f9f12d862314c34f1c}\label{class_worker_ae4e05a4d3b1454f9f12d862314c34f1c}} 
+\mbox{\hyperlink{class_worker_ae4e05a4d3b1454f9f12d862314c34f1c}{Worker}} (vector$<$ \mbox{\hyperlink{class_worker}{Worker}} $>$ \&workers)
+\begin{DoxyCompactList}\small\item\em Constructor that accepts a worker vector and then assigns it to this-\/$>$workers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_worker_a323e502c8b6837a441f3c585cab99e1a}\label{class_worker_a323e502c8b6837a441f3c585cab99e1a}} 
+string \mbox{\hyperlink{class_worker_a323e502c8b6837a441f3c585cab99e1a}{get\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em return the worker name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_worker_a16eb706d1d3c78e3886167b3a97e7731}\label{class_worker_a16eb706d1d3c78e3886167b3a97e7731}} 
+string \mbox{\hyperlink{class_worker_a16eb706d1d3c78e3886167b3a97e7731}{get\+\_\+schedule}} () const
+\begin{DoxyCompactList}\small\item\em return the worker schedule \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_worker_a1dda5b04fd8cb26eaf25f78f5a3aca88}\label{class_worker_a1dda5b04fd8cb26eaf25f78f5a3aca88}} 
+daily\+\_\+schedule \mbox{\hyperlink{class_worker_a1dda5b04fd8cb26eaf25f78f5a3aca88}{get\+\_\+d\+\_\+schedule}} () const
+\begin{DoxyCompactList}\small\item\em return the daily\+\_\+schedule struct of the desired worker \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_worker_a482b05d02f44923fd2165f923f489776}\label{class_worker_a482b05d02f44923fd2165f923f489776}} 
+int \mbox{\hyperlink{class_worker_a482b05d02f44923fd2165f923f489776}{get\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em return the worker id \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_worker_af5a64280472bfad33acf89ace6d3d56c}\label{class_worker_af5a64280472bfad33acf89ace6d3d56c}} 
+string \mbox{\hyperlink{class_worker_af5a64280472bfad33acf89ace6d3d56c}{get\+\_\+day\+\_\+off}} () const
+\begin{DoxyCompactList}\small\item\em return the day\+\_\+off the worker \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_worker_a2fa13f78b96034f6f3c42f9c7b42d264}\label{class_worker_a2fa13f78b96034f6f3c42f9c7b42d264}} 
+bool \mbox{\hyperlink{class_worker_a2fa13f78b96034f6f3c42f9c7b42d264}{get\+\_\+working}} () const
+\begin{DoxyCompactList}\small\item\em return if the worker is working or not \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_worker_a556b275aa20c8b17b5522fa25cc12433}\label{class_worker_a556b275aa20c8b17b5522fa25cc12433}} 
+void \mbox{\hyperlink{class_worker_a556b275aa20c8b17b5522fa25cc12433}{set\+\_\+working}} ()
+\begin{DoxyCompactList}\small\item\em sets worker to working \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_worker_a1d5f6827edfc4e7f123ed5891a60a84d}\label{class_worker_a1d5f6827edfc4e7f123ed5891a60a84d}} 
+void \mbox{\hyperlink{class_worker_a1d5f6827edfc4e7f123ed5891a60a84d}{set\+\_\+not\+\_\+working}} ()
+\begin{DoxyCompactList}\small\item\em sets worker to not working \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_worker_a443450ddebcf90a1bb299f92cabb4850}\label{class_worker_a443450ddebcf90a1bb299f92cabb4850}} 
+vector$<$ \mbox{\hyperlink{class_worker}{Worker}} $>$ \mbox{\hyperlink{class_worker_a443450ddebcf90a1bb299f92cabb4850}{get\+\_\+workers}} () const
+\begin{DoxyCompactList}\small\item\em return vector of workers \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_worker_a8480b1a0f54b1d000032cac98fa83b3f}\label{class_worker_a8480b1a0f54b1d000032cac98fa83b3f}} 
+class {\bfseries File\+Manager}
+\item 
+\mbox{\Hypertarget{class_worker_a0919b4861a1c5b7567456787b7c503a8}\label{class_worker_a0919b4861a1c5b7567456787b7c503a8}} 
+ostream \& \mbox{\hyperlink{class_worker_a0919b4861a1c5b7567456787b7c503a8}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_worker}{Worker}} \&obj)
+\begin{DoxyCompactList}\small\item\em ostream operator overloading to write to a file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_worker}{Worker}} -\/ defines a worker 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ worker name \\
+\hline
+{\em schedule} & -\/ worker schedule \\
+\hline
+{\em daily\+\_\+schedule} & -\/ struct of the worker schedule organized by days of the week \\
+\hline
+{\em id} & -\/ worker identification \\
+\hline
+{\em day\+\_\+off} & -\/ day of the week that this worker is not working \\
+\hline
+{\em working} & -\/ true == working, false == !working \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Workers.\+h\item 
+Workers.\+cpp\end{DoxyCompactItemize}

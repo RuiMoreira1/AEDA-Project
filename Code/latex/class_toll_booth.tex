@@ -1,0 +1,84 @@
+\hypertarget{class_toll_booth}{}\doxysection{Toll\+Booth Class Reference}
+\label{class_toll_booth}\index{TollBooth@{TollBooth}}
+
+
+{\ttfamily \#include $<$Toll\+Booth.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_toll_booth_a8d9498ecc1f6a7c740606e4515c0b5fb}\label{class_toll_booth_a8d9498ecc1f6a7c740606e4515c0b5fb}} 
+{\bfseries Toll\+Booth} (vector$<$ \mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} $>$ \&vec)
+\item 
+\mbox{\Hypertarget{class_toll_booth_a09c836932e4114eec776a33df52ceea7}\label{class_toll_booth_a09c836932e4114eec776a33df52ceea7}} 
+vector$<$ \mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} $>$ \mbox{\hyperlink{class_toll_booth_a09c836932e4114eec776a33df52ceea7}{get\+\_\+\+Tvec}} ()
+\begin{DoxyCompactList}\small\item\em return tollboth vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_toll_booth_a55b590f78fbed9ce95e00a8550a73cd8}\label{class_toll_booth_a55b590f78fbed9ce95e00a8550a73cd8}} 
+string \mbox{\hyperlink{class_toll_booth_a55b590f78fbed9ce95e00a8550a73cd8}{get\+\_\+location}} () const
+\begin{DoxyCompactList}\small\item\em return tollbooth current location \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_toll_booth_a9c42f15b2572f68b0450d216471a0fb5}\label{class_toll_booth_a9c42f15b2572f68b0450d216471a0fb5}} 
+string \mbox{\hyperlink{class_toll_booth_a9c42f15b2572f68b0450d216471a0fb5}{get\+\_\+path}} () const
+\begin{DoxyCompactList}\small\item\em return tollbooth schedule worker path \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_toll_booth_a1bc969548e3e98af33d6e55de65ced1d}\label{class_toll_booth_a1bc969548e3e98af33d6e55de65ced1d}} 
+lane\+\_\+h \mbox{\hyperlink{class_toll_booth_a1bc969548e3e98af33d6e55de65ced1d}{get\+\_\+laneh}} () const
+\begin{DoxyCompactList}\small\item\em return a struct that contains information about the lanes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_toll_booth_a7ad46b726871e73dc7e0e88dbf97eede}\label{class_toll_booth_a7ad46b726871e73dc7e0e88dbf97eede}} 
+vector$<$ lane\+\_\+h $>$ \mbox{\hyperlink{class_toll_booth_a7ad46b726871e73dc7e0e88dbf97eede}{get\+\_\+v\+\_\+laneh}} () const
+\begin{DoxyCompactList}\small\item\em return a vector of lane\+\_\+h structs \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_toll_booth_a61542b837d5151b248c2f376554bee54}\label{class_toll_booth_a61542b837d5151b248c2f376554bee54}} 
+int \mbox{\hyperlink{class_toll_booth_a61542b837d5151b248c2f376554bee54}{get\+\_\+a\+\_\+workers}} () const
+\begin{DoxyCompactList}\small\item\em return the amount of workers in the tollbooth \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_toll_booth_a7c1a4dab6e2a34f27e3a93c8a97fec40}\label{class_toll_booth_a7c1a4dab6e2a34f27e3a93c8a97fec40}} 
+double \mbox{\hyperlink{class_toll_booth_a7c1a4dab6e2a34f27e3a93c8a97fec40}{get\+\_\+cash\+\_\+flow}} () const
+\begin{DoxyCompactList}\small\item\em total cash flow in the tollbooth \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_toll_booth_afdd6daedb5913cb1bf77cc521b08f2e0}\label{class_toll_booth_afdd6daedb5913cb1bf77cc521b08f2e0}} 
+int \mbox{\hyperlink{class_toll_booth_afdd6daedb5913cb1bf77cc521b08f2e0}{get\+\_\+lanes}} () const
+\begin{DoxyCompactList}\small\item\em return the number of existing lanes in the tollbooth \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_toll_booth_a63bde2141a9f4823961b388ddbf096d9}\label{class_toll_booth_a63bde2141a9f4823961b388ddbf096d9}} 
+void \mbox{\hyperlink{class_toll_booth_a63bde2141a9f4823961b388ddbf096d9}{set\+\_\+cash\+\_\+flow}} (double i)
+\begin{DoxyCompactList}\small\item\em increase the tollbooth cash flow everytime a payment is done \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_toll_booth_af0d27a26ccb7b508b39a1d2c655b9089}\label{class_toll_booth_af0d27a26ccb7b508b39a1d2c655b9089}} 
+bool \mbox{\hyperlink{class_toll_booth_af0d27a26ccb7b508b39a1d2c655b9089}{get\+\_\+ent\+\_\+exit}} () const
+\begin{DoxyCompactList}\small\item\em return if the are exiting or entering an highway \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_toll_booth_a20e7deed791ae4424fe589da8df662fd}\label{class_toll_booth_a20e7deed791ae4424fe589da8df662fd}} 
+bool \mbox{\hyperlink{class_toll_booth_a20e7deed791ae4424fe589da8df662fd}{operator$<$}} (\mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} const \&obj)
+\begin{DoxyCompactList}\small\item\em operator overloading to use in sort methods \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_toll_booth_a8480b1a0f54b1d000032cac98fa83b3f}\label{class_toll_booth_a8480b1a0f54b1d000032cac98fa83b3f}} 
+class {\bfseries File\+Manager}
+\item 
+\mbox{\Hypertarget{class_toll_booth_ad13c110a465e2c3ca1f9a87c0883418e}\label{class_toll_booth_ad13c110a465e2c3ca1f9a87c0883418e}} 
+ostream \& \mbox{\hyperlink{class_toll_booth_ad13c110a465e2c3ca1f9a87c0883418e}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} \&obj)
+\begin{DoxyCompactList}\small\item\em ostream operator overloading to write to file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} Class 
+\begin{DoxyParams}{Parameters}
+{\em T\+\_\+vector} & -\/ tollbooth vector \\
+\hline
+{\em location} & -\/ tollbooth location \\
+\hline
+{\em path\+\_\+schedule} & -\/ name of the file that contains schedule of workers of that tollbooth \\
+\hline
+{\em lane\+\_\+h} & -\/ a struct that contains each lane specific information \\
+\hline
+{\em lane\+\_\+vec\+\_\+handler} & -\/ vector of lane\+\_\+\+\_\+h structs \\
+\hline
+{\em amount\+\_\+of\+\_\+workers} & -\/ number of workers working in tht tollbooth \\
+\hline
+{\em lanes} & -\/ number of lanes \\
+\hline
+{\em cash\+\_\+flow} & -\/ current tollbooth cash flow \\
+\hline
+{\em entrance\+\_\+exit} & -\/ true if exit tollbooth, false otherwise \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Toll\+Booth.\+h\item 
+Toll\+Booth.\+cpp\end{DoxyCompactItemize}

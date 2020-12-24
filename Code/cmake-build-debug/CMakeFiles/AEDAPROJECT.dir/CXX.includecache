@@ -1,0 +1,104 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Client.h
+string
+-
+vector
+-
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Exceptions.h
+string
+-
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/FileManager.cpp
+FileManager.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/FileManager.h
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/FileManager.h
+string
+-
+fstream
+-
+iostream
+-
+iomanip
+-
+vector
+-
+sstream
+-
+algorithm
+-
+TollBooth.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/TollBooth.h
+Exceptions.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Exceptions.h
+Workers.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Workers.h
+Vehicle.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Vehicle.h
+utils.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/utils.h
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/ProgramLoop.cpp
+ProgramLoop.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/ProgramLoop.h
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/ProgramLoop.h
+map
+-
+FileManager.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/FileManager.h
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/TollBooth.h
+iostream
+-
+vector
+-
+string
+-
+tuple
+-
+algorithm
+-
+Exceptions.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Exceptions.h
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Vehicle.h
+string
+-
+vector
+-
+iostream
+-
+algorithm
+-
+Client.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Client.h
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Workers.h
+string
+-
+vector
+-
+Exceptions.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Exceptions.h
+utils.h
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/utils.h
+
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/utils.h
+iostream
+-
+vector
+-
+string
+-
+sstream
+-
+

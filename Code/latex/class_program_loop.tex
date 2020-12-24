@@ -1,0 +1,106 @@
+\hypertarget{class_program_loop}{}\doxysection{Program\+Loop Class Reference}
+\label{class_program_loop}\index{ProgramLoop@{ProgramLoop}}
+
+
+{\ttfamily \#include $<$Program\+Loop.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_program_loop_afc1ae20ddcd04d8586eb2d44d8ad5284}\label{class_program_loop_afc1ae20ddcd04d8586eb2d44d8ad5284}} 
+void \mbox{\hyperlink{class_program_loop_afc1ae20ddcd04d8586eb2d44d8ad5284}{Program\+Loop2}} ()
+\begin{DoxyCompactList}\small\item\em The program main loop where files are read and written. \end{DoxyCompactList}\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_program_loop_ad24c94206888ef81a34db1530cf36739}{lane\+\_\+selector}} (bool via\+\_\+\+Verde, \mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} \&toll)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{class_program_loop_a8d86757bb1725426555b26f8870b3c1a}{classe\+\_\+handler}} (T \&obj, \mbox{\hyperlink{class_file_manager}{File\+Manager}} \&obj2, string time)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{class_program_loop_a51469e0a1530b3e94adb364b7e366556}{handle\+\_\+exit}} (T \&obj, \mbox{\hyperlink{class_file_manager}{File\+Manager}} \&obj2, int index, int index2, string time)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{class_program_loop_ad97ec29670b4e15613baf54c6889fa4c}{handle\+\_\+entrance}} (T \&obj, \mbox{\hyperlink{class_file_manager}{File\+Manager}} \&obj2, int index, int index2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_program_loop}{Program\+Loop}} -\/ where the loop is managed 
+\begin{DoxyParams}{Parameters}
+{\em d1} & -\/ \mbox{\hyperlink{class_file_manager}{File\+Manager}} object \\
+\hline
+{\em bill} & -\/ customer bill \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_program_loop_a8d86757bb1725426555b26f8870b3c1a}\label{class_program_loop_a8d86757bb1725426555b26f8870b3c1a}} 
+\index{ProgramLoop@{ProgramLoop}!classe\_handler@{classe\_handler}}
+\index{classe\_handler@{classe\_handler}!ProgramLoop@{ProgramLoop}}
+\doxysubsubsection{\texorpdfstring{classe\_handler()}{classe\_handler()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void Program\+Loop\+::classe\+\_\+handler (\begin{DoxyParamCaption}\item[{T \&}]{obj,  }\item[{\mbox{\hyperlink{class_file_manager}{File\+Manager}} \&}]{obj2,  }\item[{string}]{time }\end{DoxyParamCaption})}
+
+Functions that manages the entrance or exit of a vehicle 
+\begin{DoxyParams}{Parameters}
+{\em obj} & -\/ Template object \\
+\hline
+{\em ob2-\/} & \mbox{\hyperlink{class_file_manager}{File\+Manager}} object \\
+\hline
+{\em time} & -\/ current time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_program_loop_ad97ec29670b4e15613baf54c6889fa4c}\label{class_program_loop_ad97ec29670b4e15613baf54c6889fa4c}} 
+\index{ProgramLoop@{ProgramLoop}!handle\_entrance@{handle\_entrance}}
+\index{handle\_entrance@{handle\_entrance}!ProgramLoop@{ProgramLoop}}
+\doxysubsubsection{\texorpdfstring{handle\_entrance()}{handle\_entrance()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void Program\+Loop\+::handle\+\_\+entrance (\begin{DoxyParamCaption}\item[{T \&}]{obj,  }\item[{\mbox{\hyperlink{class_file_manager}{File\+Manager}} \&}]{obj2,  }\item[{int}]{index,  }\item[{int}]{index2 }\end{DoxyParamCaption})}
+
+Handles the entrance in the highway 
+\begin{DoxyParams}{Parameters}
+{\em obj} & -\/ Template object \\
+\hline
+{\em ob2-\/} & \mbox{\hyperlink{class_file_manager}{File\+Manager}} object \\
+\hline
+{\em index} & -\/ tollbooth vector index \\
+\hline
+{\em index2} & -\/ current lane of that tollbooth, index of the vector of lane\+\_\+h \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_program_loop_a51469e0a1530b3e94adb364b7e366556}\label{class_program_loop_a51469e0a1530b3e94adb364b7e366556}} 
+\index{ProgramLoop@{ProgramLoop}!handle\_exit@{handle\_exit}}
+\index{handle\_exit@{handle\_exit}!ProgramLoop@{ProgramLoop}}
+\doxysubsubsection{\texorpdfstring{handle\_exit()}{handle\_exit()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void Program\+Loop\+::handle\+\_\+exit (\begin{DoxyParamCaption}\item[{T \&}]{obj,  }\item[{\mbox{\hyperlink{class_file_manager}{File\+Manager}} \&}]{obj2,  }\item[{int}]{index,  }\item[{int}]{index2,  }\item[{string}]{time }\end{DoxyParamCaption})}
+
+Handles the exit of the highway, increasing the tollbooth cash flow and handles the worker replacing process 
+\begin{DoxyParams}{Parameters}
+{\em obj} & -\/ Template obj \\
+\hline
+{\em ob2} & -\/ \mbox{\hyperlink{class_file_manager}{File\+Manager}} object \\
+\hline
+{\em index} & -\/ tollbooth vector current index \\
+\hline
+{\em index2} & -\/ current lane of that tollbooth, index of the vector of lane\+\_\+h \\
+\hline
+{\em time} & -\/ current time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_program_loop_ad24c94206888ef81a34db1530cf36739}\label{class_program_loop_ad24c94206888ef81a34db1530cf36739}} 
+\index{ProgramLoop@{ProgramLoop}!lane\_selector@{lane\_selector}}
+\index{lane\_selector@{lane\_selector}!ProgramLoop@{ProgramLoop}}
+\doxysubsubsection{\texorpdfstring{lane\_selector()}{lane\_selector()}}
+{\footnotesize\ttfamily pair$<$ int, int $>$ Program\+Loop\+::lane\+\_\+selector (\begin{DoxyParamCaption}\item[{bool}]{via\+\_\+\+Verde,  }\item[{\mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} \&}]{toll }\end{DoxyParamCaption})}
+
+Choose the lane where the traffic is lower, considering via verde options 
+\begin{DoxyParams}{Parameters}
+{\em via\+\_\+\+Verde} & -\/ true vehicle has via verde, false otherwise \\
+\hline
+{\em toll} & -\/ \mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Program\+Loop.\+h\item 
+Program\+Loop.\+cpp\end{DoxyCompactItemize}

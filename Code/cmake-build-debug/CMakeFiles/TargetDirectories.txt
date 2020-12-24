@@ -1,0 +1,3 @@
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/cmake-build-debug/CMakeFiles/AEDAPROJECT.dir
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,270 @@
+\hypertarget{class_file_manager}{}\doxysection{File\+Manager Class Reference}
+\label{class_file_manager}\index{FileManager@{FileManager}}
+
+
+{\ttfamily \#include $<$File\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_file_manager_a8afd512c06be9daf140cc19d71f9b391}\label{class_file_manager_a8afd512c06be9daf140cc19d71f9b391}} 
+\mbox{\hyperlink{class_file_manager_a8afd512c06be9daf140cc19d71f9b391}{File\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file_manager_a0b276c0cdb47fec50c5d03779ab423a3}\label{class_file_manager_a0b276c0cdb47fec50c5d03779ab423a3}} 
+\mbox{\hyperlink{class_file_manager_a0b276c0cdb47fec50c5d03779ab423a3}{File\+Manager}} (string file)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file_manager_ac147d3b2822327b224a4720b0d56ee1d}\label{class_file_manager_ac147d3b2822327b224a4720b0d56ee1d}} 
+string \mbox{\hyperlink{class_file_manager_ac147d3b2822327b224a4720b0d56ee1d}{getfilename}} () const
+\begin{DoxyCompactList}\small\item\em Returns the filename. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file_manager_a3b1512abdd73cead25a3c179b0182ede}\label{class_file_manager_a3b1512abdd73cead25a3c179b0182ede}} 
+void \mbox{\hyperlink{class_file_manager_a3b1512abdd73cead25a3c179b0182ede}{tvec\+\_\+sort}} ()
+\begin{DoxyCompactList}\small\item\em Tollbooth vector sorter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_file_manager_ad163f0de7f5f76fd0f584ff90565bd4a}{read\+\_\+file}} (basic\+\_\+string$<$ char $>$ file, const int dif)
+\item 
+void \mbox{\hyperlink{class_file_manager_a2934b43a6e165fff4092073bf1c42505}{file\+\_\+handler}} (\mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} d1, string \&str1)
+\item 
+void \mbox{\hyperlink{class_file_manager_ab6c92e28b971eddfe031617829b32596}{file\+\_\+handler}} (\mbox{\hyperlink{class_worker}{Worker}} \&w1, string \&str1)
+\item 
+void \mbox{\hyperlink{class_file_manager_a561428a0a5c14a98b34184528dead32f}{file\+\_\+handler}} (string \&str1)
+\item 
+int \mbox{\hyperlink{class_file_manager_abdfb4110625faa385d1c8dd08698243d}{search\+\_\+t\+\_\+vec}} (vector$<$ \mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} $>$ \&t\+\_\+vector, bool exit, basic\+\_\+string$<$ char $>$ tollname)
+\item 
+pair$<$ int, string $>$ \mbox{\hyperlink{class_file_manager_af7d5410491ce81d4b18b5c9e3f3b0d0c}{replace\+\_\+worker}} (string \&time, string \&day)
+\item 
+pair$<$ int, string $>$ \mbox{\hyperlink{class_file_manager_ade73a1a34de40ace2dd0b87bfbaaf546}{schedule\+\_\+handler}} (string \&t, pair$<$ string, string $>$ \&element, \mbox{\hyperlink{class_worker}{Worker}} obj)
+\item 
+pair$<$ int, string $>$ \mbox{\hyperlink{class_file_manager_a8f6e5f83c7a31afb708609f5247bfaf8}{booth\+\_\+\+W\+\_\+handler}} (vector$<$ \mbox{\hyperlink{class_worker}{Worker}} $>$ \&w\+\_\+vector, int id\+\_\+number, string \&time)
+\item 
+\mbox{\Hypertarget{class_file_manager_adbe70717d5a53e9cbc877356d4882dcf}\label{class_file_manager_adbe70717d5a53e9cbc877356d4882dcf}} 
+void \mbox{\hyperlink{class_file_manager_adbe70717d5a53e9cbc877356d4882dcf}{save\+\_\+workers\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em Updating the workers file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file_manager_acdc437229597836a6d983a9794073d86}\label{class_file_manager_acdc437229597836a6d983a9794073d86}} 
+void \mbox{\hyperlink{class_file_manager_acdc437229597836a6d983a9794073d86}{save\+\_\+tolls\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em Updating the tollbooth file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file_manager_a401017c4664ab0311b691575665ebd02}\label{class_file_manager_a401017c4664ab0311b691575665ebd02}} 
+void \mbox{\hyperlink{class_file_manager_a401017c4664ab0311b691575665ebd02}{save\+\_\+vehicles\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em Updating the vehicles file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file_manager_abaed33b5b0c13b8a597db9335a1aacfa}\label{class_file_manager_abaed33b5b0c13b8a597db9335a1aacfa}} 
+\mbox{\hyperlink{class_file_manager_abaed33b5b0c13b8a597db9335a1aacfa}{$\sim$\+File\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_file_manager}{File\+Manager}} destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static vector$<$ string $>$ \mbox{\hyperlink{class_file_manager_aeb4b390c7869be65d0657a64d96751fd}{split\+\_\+string}} (string \&str, char delim)
+\item 
+static bool \mbox{\hyperlink{class_file_manager_a84bffc9412cc86d659dfa6aa2af9d85f}{time\+\_\+handler}} (string \&str1, string str2)
+\item 
+static pair$<$ string, string $>$ \mbox{\hyperlink{class_file_manager_add13a5fd4ea5a935bf729a984c875281}{time\+\_\+h}} (string time)
+\item 
+static pair$<$ string, string $>$ \mbox{\hyperlink{class_file_manager_aaa0195cfb56a030d424bfb3cab24135b}{time\+\_\+splitter}} (string \&str1)
+\item 
+static void \mbox{\hyperlink{class_file_manager_a4937ca68380283e667ff91c3d722f0e0}{search\+\_\+worker}} (vector$<$ \mbox{\hyperlink{class_worker}{Worker}} $>$ \&w\+\_\+vector, int id\+\_\+number)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_file_manager_a37dfcabd3810882c631c96b3b2991c0e}\label{class_file_manager_a37dfcabd3810882c631c96b3b2991c0e}} 
+vector$<$ \mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} $>$ {\bfseries t\+\_\+vec}
+\item 
+\mbox{\Hypertarget{class_file_manager_ace38d184fdb9cded2a9d2ea4fffc9d41}\label{class_file_manager_ace38d184fdb9cded2a9d2ea4fffc9d41}} 
+vector$<$ \mbox{\hyperlink{class_worker}{Worker}} $>$ {\bfseries w\+\_\+vec}
+\item 
+\mbox{\Hypertarget{class_file_manager_a3a357387a2c2039c0bcdef4e51df9d33}\label{class_file_manager_a3a357387a2c2039c0bcdef4e51df9d33}} 
+vector$<$ \mbox{\hyperlink{class_vehicle}{Vehicle}} $\ast$ $>$ {\bfseries v\+\_\+vec}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_file_manager_aef0427307feb2b08481023cffc6690ae}\label{class_file_manager_aef0427307feb2b08481023cffc6690ae}} 
+class {\bfseries Program\+Loop}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_file_manager}{File\+Manager}} -\/ handles the files 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ first file that needs to be read \\
+\hline
+{\em tollbooth} & -\/ Tollbooth object \\
+\hline
+{\em worker} & -\/ \mbox{\hyperlink{class_worker}{Worker}} object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_file_manager_a8f6e5f83c7a31afb708609f5247bfaf8}\label{class_file_manager_a8f6e5f83c7a31afb708609f5247bfaf8}} 
+\index{FileManager@{FileManager}!booth\_W\_handler@{booth\_W\_handler}}
+\index{booth\_W\_handler@{booth\_W\_handler}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{booth\_W\_handler()}{booth\_W\_handler()}}
+{\footnotesize\ttfamily pair$<$ int, string $>$ File\+Manager\+::booth\+\_\+\+W\+\_\+handler (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_worker}{Worker}} $>$ \&}]{w\+\_\+vector,  }\item[{int}]{id\+\_\+number,  }\item[{string \&}]{time }\end{DoxyParamCaption})}
+
+Handles the schedule of workers, seaking if the worker needs replacement 
+\begin{DoxyParams}{Parameters}
+{\em w\+\_\+vector} & -\/ worker vector \\
+\hline
+{\em id\+\_\+number} & -\/ worker id \\
+\hline
+{\em time} & -\/ current time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_a561428a0a5c14a98b34184528dead32f}\label{class_file_manager_a561428a0a5c14a98b34184528dead32f}} 
+\index{FileManager@{FileManager}!file\_handler@{file\_handler}}
+\index{file\_handler@{file\_handler}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{file\_handler()}{file\_handler()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void File\+Manager\+::file\+\_\+handler (\begin{DoxyParamCaption}\item[{string \&}]{str1 }\end{DoxyParamCaption})}
+
+Handles a vehicle file, and creates the classe\+\_\+$\ast$ object with the file specifications 
+\begin{DoxyParams}{Parameters}
+{\em str1} & -\/ line received from the file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_a2934b43a6e165fff4092073bf1c42505}\label{class_file_manager_a2934b43a6e165fff4092073bf1c42505}} 
+\index{FileManager@{FileManager}!file\_handler@{file\_handler}}
+\index{file\_handler@{file\_handler}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{file\_handler()}{file\_handler()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void File\+Manager\+::file\+\_\+handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_toll_booth}{Toll\+Booth}}}]{d1,  }\item[{string \&}]{str1 }\end{DoxyParamCaption})}
+
+Handles a tollbooth file, and creates the tollbooth object with the file specifications 
+\begin{DoxyParams}{Parameters}
+{\em d1-\/} & Tollbooth object \\
+\hline
+{\em str1} & -\/ line received from the file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_ab6c92e28b971eddfe031617829b32596}\label{class_file_manager_ab6c92e28b971eddfe031617829b32596}} 
+\index{FileManager@{FileManager}!file\_handler@{file\_handler}}
+\index{file\_handler@{file\_handler}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{file\_handler()}{file\_handler()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void File\+Manager\+::file\+\_\+handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_worker}{Worker}} \&}]{w1,  }\item[{string \&}]{str1 }\end{DoxyParamCaption})}
+
+Handles a worker file, and creates the worker object with the file specifications 
+\begin{DoxyParams}{Parameters}
+{\em d1-\/} & worker object \\
+\hline
+{\em str1} & -\/ line received from the file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_ad163f0de7f5f76fd0f584ff90565bd4a}\label{class_file_manager_ad163f0de7f5f76fd0f584ff90565bd4a}} 
+\index{FileManager@{FileManager}!read\_file@{read\_file}}
+\index{read\_file@{read\_file}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{read\_file()}{read\_file()}}
+{\footnotesize\ttfamily void File\+Manager\+::read\+\_\+file (\begin{DoxyParamCaption}\item[{basic\+\_\+string$<$ char $>$}]{file,  }\item[{const int}]{dif }\end{DoxyParamCaption})}
+
+Reads the file we want to, throws an exception if the file can\textquotesingle{}t be opened 
+\begin{DoxyParams}{Parameters}
+{\em file} & -\/ file to be read \\
+\hline
+{\em dif} & -\/ 0 -\/ read worker file 1 -\/ read tollbooth file 2 -\/ vehicle file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_af7d5410491ce81d4b18b5c9e3f3b0d0c}\label{class_file_manager_af7d5410491ce81d4b18b5c9e3f3b0d0c}} 
+\index{FileManager@{FileManager}!replace\_worker@{replace\_worker}}
+\index{replace\_worker@{replace\_worker}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{replace\_worker()}{replace\_worker()}}
+{\footnotesize\ttfamily pair$<$ int, string $>$ File\+Manager\+::replace\+\_\+worker (\begin{DoxyParamCaption}\item[{string \&}]{time,  }\item[{string \&}]{day }\end{DoxyParamCaption})}
+
+Replaces the worker 
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ current time \\
+\hline
+{\em day} & -\/ day of the week \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_ade73a1a34de40ace2dd0b87bfbaaf546}\label{class_file_manager_ade73a1a34de40ace2dd0b87bfbaaf546}} 
+\index{FileManager@{FileManager}!schedule\_handler@{schedule\_handler}}
+\index{schedule\_handler@{schedule\_handler}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{schedule\_handler()}{schedule\_handler()}}
+{\footnotesize\ttfamily pair$<$ int, string $>$ File\+Manager\+::schedule\+\_\+handler (\begin{DoxyParamCaption}\item[{string \&}]{t,  }\item[{pair$<$ string, string $>$ \&}]{element,  }\item[{\mbox{\hyperlink{class_worker}{Worker}}}]{obj }\end{DoxyParamCaption})}
+
+If the workers need to be replaced, then this function will handle it 
+\begin{DoxyParams}{Parameters}
+{\em t} & -\/ current time \\
+\hline
+{\em element} & -\/ pair containing \char`\"{}\+November 20 Monday 12\+:01\+:37\char`\"{} splitted \\
+\hline
+{\em obj} & -\/ \mbox{\hyperlink{class_worker}{Worker}} object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_abdfb4110625faa385d1c8dd08698243d}\label{class_file_manager_abdfb4110625faa385d1c8dd08698243d}} 
+\index{FileManager@{FileManager}!search\_t\_vec@{search\_t\_vec}}
+\index{search\_t\_vec@{search\_t\_vec}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{search\_t\_vec()}{search\_t\_vec()}}
+{\footnotesize\ttfamily int File\+Manager\+::search\+\_\+t\+\_\+vec (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_toll_booth}{Toll\+Booth}} $>$ \&}]{t\+\_\+vector,  }\item[{bool}]{exit,  }\item[{basic\+\_\+string$<$ char $>$}]{tollname }\end{DoxyParamCaption})}
+
+Search if a specific tollbooth exister returns 1 if the tb doesn\textquotesingle{}t exist 
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+vector} & -\/ tollbooth vector \\
+\hline
+{\em exit} & -\/ if the tollbooth is an exit == true, false otherwise \\
+\hline
+{\em tollname} & -\/ the tollbooth name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_a4937ca68380283e667ff91c3d722f0e0}\label{class_file_manager_a4937ca68380283e667ff91c3d722f0e0}} 
+\index{FileManager@{FileManager}!search\_worker@{search\_worker}}
+\index{search\_worker@{search\_worker}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{search\_worker()}{search\_worker()}}
+{\footnotesize\ttfamily void File\+Manager\+::search\+\_\+worker (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_worker}{Worker}} $>$ \&}]{w\+\_\+vector,  }\item[{int}]{id\+\_\+number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Search if the worker exists 
+\begin{DoxyParams}{Parameters}
+{\em w\+\_\+vector} & -\/ worker vector \\
+\hline
+{\em id\+\_\+number} & -\/ worker id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_aeb4b390c7869be65d0657a64d96751fd}\label{class_file_manager_aeb4b390c7869be65d0657a64d96751fd}} 
+\index{FileManager@{FileManager}!split\_string@{split\_string}}
+\index{split\_string@{split\_string}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{split\_string()}{split\_string()}}
+{\footnotesize\ttfamily vector$<$ string $>$ File\+Manager\+::split\+\_\+string (\begin{DoxyParamCaption}\item[{string \&}]{str,  }\item[{char}]{delim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits a string by a specific delimiter character 
+\begin{DoxyParams}{Parameters}
+{\em str} & -\/ the string to be spliced \\
+\hline
+{\em delim} & -\/ delimiter character \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_add13a5fd4ea5a935bf729a984c875281}\label{class_file_manager_add13a5fd4ea5a935bf729a984c875281}} 
+\index{FileManager@{FileManager}!time\_h@{time\_h}}
+\index{time\_h@{time\_h}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{time\_h()}{time\_h()}}
+{\footnotesize\ttfamily pair$<$ string, string $>$ File\+Manager\+::time\+\_\+h (\begin{DoxyParamCaption}\item[{string}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\hyperlink{class_worker}{Worker}} daily\+\_\+schedule \char`\"{}00\+:00\+:00-\/08\+:00\+:00\char`\"{} splitted 
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ worker schedule \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_a84bffc9412cc86d659dfa6aa2af9d85f}\label{class_file_manager_a84bffc9412cc86d659dfa6aa2af9d85f}} 
+\index{FileManager@{FileManager}!time\_handler@{time\_handler}}
+\index{time\_handler@{time\_handler}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{time\_handler()}{time\_handler()}}
+{\footnotesize\ttfamily bool File\+Manager\+::time\+\_\+handler (\begin{DoxyParamCaption}\item[{string \&}]{str1,  }\item[{string}]{str2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Compares two time strings 
+\begin{DoxyParams}{Parameters}
+{\em str1} & -\/ time string \\
+\hline
+{\em str2} & -\/ time string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_manager_aaa0195cfb56a030d424bfb3cab24135b}\label{class_file_manager_aaa0195cfb56a030d424bfb3cab24135b}} 
+\index{FileManager@{FileManager}!time\_splitter@{time\_splitter}}
+\index{time\_splitter@{time\_splitter}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{time\_splitter()}{time\_splitter()}}
+{\footnotesize\ttfamily pair$<$ string, string $>$ File\+Manager\+::time\+\_\+splitter (\begin{DoxyParamCaption}\item[{string \&}]{str1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits the time string \char`\"{}\+November 20 Monday 12\+:01\+:37\char`\"{} into two parts, the date/day and hours 
+\begin{DoxyParams}{Parameters}
+{\em str1} & -\/ time string \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+File\+Manager.\+h\item 
+File\+Manager.\+cpp\end{DoxyCompactItemize}

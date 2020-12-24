@@ -1,0 +1,154 @@
+\hypertarget{class_vehicle}{}\doxysection{Vehicle Class Reference}
+\label{class_vehicle}\index{Vehicle@{Vehicle}}
+
+
+{\ttfamily \#include $<$Vehicle.\+h$>$}
+
+Inheritance diagram for Vehicle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_vehicle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vehicle_aeb8af606d3bb5c12d4f01d8d3b3ae546}\label{class_vehicle_aeb8af606d3bb5c12d4f01d8d3b3ae546}} 
+{\bfseries Vehicle} (vector$<$ \mbox{\hyperlink{class_vehicle}{Vehicle}} $\ast$ $>$ \&v)
+\item 
+\mbox{\hyperlink{class_vehicle_a1c1432323d94f4d21d7504beba8cc2ef}{Vehicle}} (int cl\+\_\+n, string \&n, int dl, int id, int age, string \&lp, bool vv, int y, int m, int c\+\_\+kms, int axis, double w, double h, string \&f\+\_\+type, string \&tb, bool io, string \&time)
+\item 
+\mbox{\Hypertarget{class_vehicle_a2abf0e2a6cd012874c3713a49a9b6fa6}\label{class_vehicle_a2abf0e2a6cd012874c3713a49a9b6fa6}} 
+string {\bfseries get\+\_\+lp} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_a3133e19f6f3760e4dd5672a73cefa522}\label{class_vehicle_a3133e19f6f3760e4dd5672a73cefa522}} 
+double {\bfseries get\+\_\+currentkms} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_a34fc25c571a49eed8a3dca287e2c5115}\label{class_vehicle_a34fc25c571a49eed8a3dca287e2c5115}} 
+bool {\bfseries get\+\_\+vverde} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_a364444db558c9d095c9cb7b059fc72f4}\label{class_vehicle_a364444db558c9d095c9cb7b059fc72f4}} 
+int {\bfseries get\+\_\+year} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_a4ebc87dc1facedaeb2df75046c4c9766}\label{class_vehicle_a4ebc87dc1facedaeb2df75046c4c9766}} 
+int {\bfseries get\+\_\+month} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_abe83c104d32b4bcddb43587a4c2f7dd7}\label{class_vehicle_abe83c104d32b4bcddb43587a4c2f7dd7}} 
+int {\bfseries get\+\_\+naxis} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_ab78b5e7641077fa8fc71312d9a1abfbf}\label{class_vehicle_ab78b5e7641077fa8fc71312d9a1abfbf}} 
+double {\bfseries get\+\_\+weight} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_a7b3966b7111c52e0d468556037926937}\label{class_vehicle_a7b3966b7111c52e0d468556037926937}} 
+double {\bfseries get\+\_\+height} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_a38a02e4510077e7f4a8e34112c180e45}\label{class_vehicle_a38a02e4510077e7f4a8e34112c180e45}} 
+string {\bfseries get\+\_\+ftype} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_a25e9005a971c7db735accba2969c66a0}\label{class_vehicle_a25e9005a971c7db735accba2969c66a0}} 
+string {\bfseries get\+\_\+tollb} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_a0e5c5ed542a5d45ff231c5bd3aeca7b4}\label{class_vehicle_a0e5c5ed542a5d45ff231c5bd3aeca7b4}} 
+bool {\bfseries get\+\_\+in\+\_\+out} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_ad6b5e569e6d00616f8c0ba9c2c7bf43a}\label{class_vehicle_ad6b5e569e6d00616f8c0ba9c2c7bf43a}} 
+string {\bfseries get\+\_\+time} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_a2870abeb029693950adb346858765c74}\label{class_vehicle_a2870abeb029693950adb346858765c74}} 
+int {\bfseries get\+\_\+what\+\_\+classe} () const
+\item 
+\mbox{\Hypertarget{class_vehicle_a8289e7308a2bc3338130efeac86eaf24}\label{class_vehicle_a8289e7308a2bc3338130efeac86eaf24}} 
+virtual double {\bfseries get\+\_\+pricekm} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vehicle_a8480b1a0f54b1d000032cac98fa83b3f}\label{class_vehicle_a8480b1a0f54b1d000032cac98fa83b3f}} 
+class {\bfseries File\+Manager}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_vehicle}{Vehicle}} -\/ that has classe 1,2,3,4 has derived classes 
+\begin{DoxyParams}{Parameters}
+{\em license\+\_\+plate} & -\/ vehicle license\+\_\+plate \\
+\hline
+{\em v\+\_\+verde} & -\/ true == has via verde, false otherwise \\
+\hline
+{\em year} & -\/ vehicle year \\
+\hline
+{\em month} & -\/ vehicle month \\
+\hline
+{\em current\+\_\+kms} & -\/ if exiting in tollbooth, the kilometers that the vehicle travelled \\
+\hline
+{\em n\+\_\+axis} & -\/ number of axis of the vehicle \\
+\hline
+{\em what\+\_\+classe} & -\/ the vehicle classe \\
+\hline
+{\em weight} & -\/ vehicle weight \\
+\hline
+{\em height} & -\/ vehicle height \\
+\hline
+{\em fuel\+\_\+type} & -\/ vehicle fuel type \\
+\hline
+{\em tollbooth} & -\/ current tollbooth \\
+\hline
+{\em in\+\_\+out} & -\/ in == false, out == true, if the vehicle is entering or exiting the highway \\
+\hline
+{\em time} & -\/ the time that he is coming through the tollbooth \\
+\hline
+{\em price\+\_\+km} & -\/ the tollbooth km\+\_\+price \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_vehicle_a1c1432323d94f4d21d7504beba8cc2ef}\label{class_vehicle_a1c1432323d94f4d21d7504beba8cc2ef}} 
+\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}}
+{\footnotesize\ttfamily Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}\item[{int}]{cl\+\_\+n,  }\item[{string \&}]{n,  }\item[{int}]{dl,  }\item[{int}]{id,  }\item[{int}]{age,  }\item[{string \&}]{lp,  }\item[{bool}]{vv,  }\item[{int}]{y,  }\item[{int}]{m,  }\item[{int}]{c\+\_\+kms,  }\item[{int}]{axis,  }\item[{double}]{w,  }\item[{double}]{h,  }\item[{string \&}]{f\+\_\+type,  }\item[{string \&}]{tb,  }\item[{bool}]{io,  }\item[{string \&}]{time }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_vehicle}{Vehicle}} constructor 
+\begin{DoxyParams}{Parameters}
+{\em cl\+\_\+n} & -\/ classe number \\
+\hline
+{\em n} & -\/ client name \\
+\hline
+{\em dl} & -\/ drivers license \\
+\hline
+{\em id} & -\/ client id \\
+\hline
+{\em age} & -\/ client age \\
+\hline
+{\em lp} & -\/ vehicle license plate \\
+\hline
+{\em vv} & -\/ vehicle has via ver or not \\
+\hline
+{\em y} & -\/ vehicle year \\
+\hline
+{\em m} & -\/ vehicle month \\
+\hline
+{\em c\+\_\+kms} & -\/ vehicle current\+\_\+kms \\
+\hline
+{\em axis} & -\/ vehicle axis \\
+\hline
+{\em w} & -\/ vehicle weight \\
+\hline
+{\em h} & -\/ vehicle height \\
+\hline
+{\em f\+\_\+type} & -\/ vehicle fuel type \\
+\hline
+{\em tb} & -\/ current tollbooth \\
+\hline
+{\em io} & -\/ in or out \\
+\hline
+{\em time} & -\/ current time when passing the tollbooth \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vehicle.\+h\item 
+Vehicle.\+cpp\end{DoxyCompactItemize}
