@@ -1,0 +1,8 @@
+Name|Id|Tec_type|Total_Interventions|Efficiency|Working|Available|
+Joao Carvalho|22010213|0|12|55.68|1|1|
+Ricardo Pereira|22012341|1|13|37.32|0|0|
+Joao Ferreira|215060876|2|9|32.31|1|0|
+Joel Monteiro|215041876|0|7|62.13|0|0|
+Iolanda Moreira|21903292|2|14|74.13|1|1|
+Igor Torreira|10923054|1|17|45.63|1|1|
+Alfredo Santos|18945701|0|7|56.76|1|0|

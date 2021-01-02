@@ -1,0 +1,7 @@
+Date|Type|Duration|Tec_worker|T_booth|Ongoing|
+November 20 2020 Monday|Revision|12,35|Joao Carvalho|Valongo|YES|
+November 21 2020 Tuesday|Revision|12,35|Alfredo Santos|Valongo|YES|
+November 21 2020 Tuesday|Revision|12,35|Alfredo Santos|Valongo|YES|
+November 22 2020 Wednesday|Revision|12,35|Joel Monteiro|Valongo|YES|
+November 22 2020 Wednesday|Revision|12,35|Joao Carvalho|Valongo|YES|
+November 23 2020 Thrusday|Revision|12,35|Iolanda Moreira|Valongo|YES|

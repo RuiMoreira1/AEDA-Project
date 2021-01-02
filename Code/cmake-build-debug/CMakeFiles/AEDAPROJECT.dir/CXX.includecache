@@ -6,21 +6,27 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Client.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/BST.cpp
+cstddef
+-
+BST.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/BST.h
+
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/BST.h
+stack
+-
+
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/Client.h
 string
 -
 vector
 -
 
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Exceptions.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/Exceptions.h
 string
 -
 
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/FileManager.cpp
-FileManager.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/FileManager.h
-
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/FileManager.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/FileManager.h
 string
 -
 fstream
@@ -36,27 +42,25 @@ sstream
 algorithm
 -
 TollBooth.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/TollBooth.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/TollBooth.h
 Exceptions.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Exceptions.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/Exceptions.h
 Workers.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Workers.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/Workers.h
 Vehicle.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Vehicle.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/Vehicle.h
 utils.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/utils.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/utils.h
+intervention.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/intervention.h
 
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/ProgramLoop.cpp
-ProgramLoop.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/ProgramLoop.h
-
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/ProgramLoop.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/ProgramLoop.h
 map
 -
 FileManager.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/FileManager.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/FileManager.h
 
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/TollBooth.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/TollBooth.h
 iostream
 -
 vector
@@ -67,10 +71,14 @@ tuple
 -
 algorithm
 -
+queue
+-
+technician.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/technician.h
 Exceptions.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Exceptions.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/Exceptions.h
 
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Vehicle.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/Vehicle.h
 string
 -
 vector
@@ -80,19 +88,47 @@ iostream
 algorithm
 -
 Client.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Client.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/Client.h
 
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Workers.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/Workers.h
 string
 -
 vector
 -
 Exceptions.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/Exceptions.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/Exceptions.h
 utils.h
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/utils.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/utils.h
 
-C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/utils.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/intervention.h
+string
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/string
+vector
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/vector
+technician.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/technician.h
+TollBooth.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/TollBooth.h
+BST.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/BST.h
+
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/main.cpp
+iostream
+-
+string
+-
+BST.cpp
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/BST.cpp
+ProgramLoop.h
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/ProgramLoop.h
+
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/technician.h
+string
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/string
+vector
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/vector
+
+C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/utils.h
 iostream
 -
 vector

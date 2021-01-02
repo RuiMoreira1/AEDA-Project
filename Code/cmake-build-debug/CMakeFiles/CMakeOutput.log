@@ -21,7 +21,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx86/x86/cl.exe 
@@ -45,53 +45,53 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_f5739\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_f5739.dir\build.make /nologo -L                  CMakeFiles\cmTC_f5739.dir\build
-Building C object CMakeFiles/cmTC_f5739.dir/testCCompiler.c.obj
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ruipe\AppData\Local\Temp\nm50B5.tmp
+Run Build Command(s):nmake /nologo cmTC_d2056\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_d2056.dir\build.make /nologo -L                  CMakeFiles\cmTC_d2056.dir\build
+Building C object CMakeFiles/cmTC_d2056.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ruipe\AppData\Local\Temp\nmECBA.tmp
 testCCompiler.c
-Linking C executable cmTC_f5739.exe
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_f5739.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_f5739.dir\objects1.rsp @C:\Users\ruipe\AppData\Local\Temp\nm5104.tmp
+Linking C executable cmTC_d2056.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_d2056.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_d2056.dir\objects1.rsp @C:\Users\ruipe\AppData\Local\Temp\nmEE22.tmp
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_ec220\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_ec220.dir\build.make /nologo -L                  CMakeFiles\cmTC_ec220.dir\build
-Building C object CMakeFiles/cmTC_ec220.dir/CMakeCCompilerABI.c.obj
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ruipe\AppData\Local\Temp\nm52A9.tmp
+Run Build Command(s):nmake /nologo cmTC_5d840\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_5d840.dir\build.make /nologo -L                  CMakeFiles\cmTC_5d840.dir\build
+Building C object CMakeFiles/cmTC_5d840.dir/CMakeCCompilerABI.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ruipe\AppData\Local\Temp\nmEFF6.tmp
 CMakeCCompilerABI.c
-Linking C executable cmTC_ec220.exe
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_ec220.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_ec220.dir\objects1.rsp @C:\Users\ruipe\AppData\Local\Temp\nm52E8.tmp
+Linking C executable cmTC_5d840.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_5d840.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_5d840.dir\objects1.rsp @C:\Users\ruipe\AppData\Local\Temp\nmF035.tmp
 
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_a3206\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_a3206.dir\build.make /nologo -L                  CMakeFiles\cmTC_a3206.dir\build
-Building CXX object CMakeFiles/cmTC_a3206.dir/testCXXCompiler.cxx.obj
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ruipe\AppData\Local\Temp\nm54CC.tmp
+Run Build Command(s):nmake /nologo cmTC_8225c\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_8225c.dir\build.make /nologo -L                  CMakeFiles\cmTC_8225c.dir\build
+Building CXX object CMakeFiles/cmTC_8225c.dir/testCXXCompiler.cxx.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ruipe\AppData\Local\Temp\nmF1F9.tmp
 testCXXCompiler.cxx
-Linking CXX executable cmTC_a3206.exe
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_a3206.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_a3206.dir\objects1.rsp @C:\Users\ruipe\AppData\Local\Temp\nm551B.tmp
+Linking CXX executable cmTC_8225c.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_8225c.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_8225c.dir\objects1.rsp @C:\Users\ruipe\AppData\Local\Temp\nmF248.tmp
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_a13b2\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_a13b2.dir\build.make /nologo -L                  CMakeFiles\cmTC_a13b2.dir\build
-Building CXX object CMakeFiles/cmTC_a13b2.dir/CMakeCXXCompilerABI.cpp.obj
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ruipe\AppData\Local\Temp\nm572D.tmp
+Run Build Command(s):nmake /nologo cmTC_60bba\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_60bba.dir\build.make /nologo -L                  CMakeFiles\cmTC_60bba.dir\build
+Building CXX object CMakeFiles/cmTC_60bba.dir/CMakeCXXCompilerABI.cpp.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ruipe\AppData\Local\Temp\nmF3BE.tmp
 CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_a13b2.exe
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_a13b2.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_a13b2.dir\objects1.rsp @C:\Users\ruipe\AppData\Local\Temp\nm578C.tmp
+Linking CXX executable cmTC_60bba.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_60bba.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_60bba.dir\objects1.rsp @C:\Users\ruipe\AppData\Local\Temp\nmF40E.tmp
 
 
 

@@ -1,6 +1,6 @@
 LOCATION|ENTRANCE/EXIT|TYPE(NORMAL/SCUTT)|LANES|VIA_VERDE LANES|WORKING LANES|EACH LANE TRAFFIC|CASH FLOW|AMOUNT OF WORKERS|PATH_TO_SCHEDULE|
-Valongo|Exit|3|1-1500-1-1-1000-20100023/2-1000-0-0-1500-None/3-3500-0-1-3500-20100020|6000|10|workers.txt|
-Ermesinde|Exit|3|1-1500-1-1-1000-None/2-1000-0-0-1500-None/3-3500-0-1-3500-20100021|6000|10|workers.txt|
-Valongo|In|3|1-1500-1-1-0-None/2-1000-0-0-0-None/3-3500-0-1-0-None|6000|10|workers.txt|
-Ermesinde|In|3|1-1500-1-1-0-None/2-1000-0-0-0-None/3-3500-0-1-0-None|6000|10|workers.txt|
+Valongo|Exit|3|1-1500-1-1-1000-20100023/2-1000-0-0-1500-None/3-3500-0-1-3500-20100020|6000|10|workers.txt|tec.txt|
+Ermesinde|Exit|3|1-1500-1-1-1000-None/2-1000-0-0-1500-None/3-3500-0-1-3500-20100021|6000|10|workers.txt|tec.txt|
+Valongo|In|3|1-1500-1-1-0-None/2-1000-0-0-0-None/3-3500-0-1-0-None|6000|10|workers.txt|tec.txt|
+Ermesinde|In|3|1-1500-1-1-0-None/2-1000-0-0-0-None/3-3500-0-1-0-None|6000|10|workers.txt|tec.txt|
 

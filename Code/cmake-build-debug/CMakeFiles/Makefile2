@@ -48,10 +48,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\AEDAPROJECT needed"
+CMAKE_SOURCE_DIR = C:\Users\ruipe\OneDrive\Documentos\GitHub\Aeda_Proj_Part2\Code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\AEDAPROJECT needed\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\ruipe\OneDrive\Documentos\GitHub\Aeda_Proj_Part2\Code\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -78,14 +78,14 @@ clean: CMakeFiles\AEDAPROJECT.dir\clean
 CMakeFiles\AEDAPROJECT.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AEDAPROJECT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AEDAPROJECT.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AEDAPROJECT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\AEDAPROJECT.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\ruipe\OneDrive\Ambiente de Trabalho\AEDAPROJECT needed\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target AEDAPROJECT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ruipe\OneDrive\Documentos\GitHub\Aeda_Proj_Part2\Code\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target AEDAPROJECT"
 .PHONY : CMakeFiles\AEDAPROJECT.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\AEDAPROJECT.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\AEDAPROJECT needed\cmake-build-debug\CMakeFiles" 13
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ruipe\OneDrive\Documentos\GitHub\Aeda_Proj_Part2\Code\cmake-build-debug\CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\AEDAPROJECT.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\AEDAPROJECT needed\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ruipe\OneDrive\Documentos\GitHub\Aeda_Proj_Part2\Code\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\AEDAPROJECT.dir\rule
 
 # Convenience name for target.

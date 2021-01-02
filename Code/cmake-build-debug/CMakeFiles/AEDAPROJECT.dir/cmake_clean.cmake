@@ -12,8 +12,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/AEDAPROJECT.dir/Vehicle.cpp.obj"
   "CMakeFiles/AEDAPROJECT.dir/Workers.cpp.obj"
   "CMakeFiles/AEDAPROJECT.dir/hash_table.cpp.obj"
+  "CMakeFiles/AEDAPROJECT.dir/intervention.cpp.obj"
   "CMakeFiles/AEDAPROJECT.dir/main.cpp.obj"
+  "CMakeFiles/AEDAPROJECT.dir/menu.cpp.obj"
   "CMakeFiles/AEDAPROJECT.dir/priority_queue.cpp.obj"
+  "CMakeFiles/AEDAPROJECT.dir/technician.cpp.obj"
   "CMakeFiles/AEDAPROJECT.dir/utils.cpp.obj"
 )
 

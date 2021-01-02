@@ -1,4 +1,5 @@
 #include "ProgramLoop.h"
+#include <iostream>
 
 ///The program main loop where files are read and written
 void ProgramLoop::ProgramLoop2() {
@@ -7,6 +8,8 @@ void ProgramLoop::ProgramLoop2() {
     TollBooth t1(d1->t_vec);
     Vehicle *v1 = new Vehicle(d1->v_vec);
     t1.tvec_sort();
+    //d1->read_file("interventions.txt",3);
+    t1.prio_teste();
     int classe = 0;
     for(int i = 0; i < v1->get_v_vector().size(); i++){
         classe = v1->get_v_vector()[i]->get_what_classe();;

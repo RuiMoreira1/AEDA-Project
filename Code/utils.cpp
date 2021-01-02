@@ -3,7 +3,7 @@
 ///Worker daily_schedule "00:00:00-08:00:00" splitted
 ///@param time - worker schedule
 pair<string, string> Utils::time_handler(string time) {
-    string t1 = "",t2 = "";
+    string t1,t2;
     for(int i = 0; i < 8; i++){
         t1 += time[i];
     }

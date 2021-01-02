@@ -13,9 +13,11 @@ string FileManager::getfilename() const {
     return this->filename;
 }
 
-///Reads the file we want to, throws an exception if the file can't be opened
-///@param file - file to be read
-///@param dif - 0 - read worker file 1 - read tollbooth file 2 - vehicle file
+/**
+ * Reads the file we want to, throws an exception if the file can't be opened
+ * @param file - file to be read
+ * @param dif - 0 - read worker file 1 - read tollbooth file 2 - vehicle file 3 - technician file
+ */
 void FileManager::read_file(string file, const int dif) { //dif == true, read workers.txt file else read toll file
     ifstream infile(file.c_str(), ios::in);
     string error = "Can't open the desired file";
@@ -23,35 +25,18 @@ void FileManager::read_file(string file, const int dif) { //dif == true, read wo
         if(infile.is_open()){
             string str;
             getline(infile,str); //We don´t want the first line
-            if (dif == 0){
-                w_vec = {};
-                while(getline(infile,str)){
-                    if(str == "") continue; //Ignoring empty lines
-                    try {
-                        file_handler(worker, str);
-                    }
-                    catch (NotAMemberOf &exc){
-                        cerr << "An exception has been thrown: Not member of " << exc.get_error() << endl;
-                        exit(EXIT_FAILURE);
-                    }
+            if ( dif == 0 ) w_vec = {};
+            while(getline(infile,str)){
+                if(str.empty()) continue; //Ignoring empty lines
+                try {
+                    if( dif == 0 ) file_handler(worker, str);
+                    else if ( dif == 1 ) file_handler(tollbooth, str);
+                    else if ( dif == 2 ) file_handler(str);
+                    //else if ( dif == 3 ) file_handler(interve, str);
                 }
-            }
-            else if (dif == 1){
-                while (getline(infile, str)) {
-                    if (str == "") continue;
-                    try {
-                        file_handler(tollbooth, str);
-                    }
-                    catch (NotAMemberOf &exc){
-                        cerr << "An exception has been thrown: Not member of " << exc.get_error() << endl;
-                        exit(EXIT_FAILURE);
-                    }
-                }
-            }
-            else if (dif == 2){
-                while (getline(infile, str)){
-                    if(str == "") continue;
-                    file_handler(str);
+                catch (NotAMemberOf &exc){
+                    cerr << "An exception has been thrown: Not member of " << exc.get_error() << endl;
+                    exit(EXIT_FAILURE);
                 }
             }
         }
@@ -68,6 +53,8 @@ void FileManager::read_file(string file, const int dif) { //dif == true, read wo
 ///@param str1 - line received from the file
 void FileManager::file_handler(TollBooth d1, string &str1) {
     string n = "TollBooth";
+    d1.tec_queue = priority_queue<Technician> ();
+    cout << d1.tec_queue.size() << "->HERE\n";
     vector<string> init_split = utilities->split_string(str1,'|');
     for(int i = 0; i < init_split.size(); i++){
         if (i == 0) d1.location = init_split[i];
@@ -80,10 +67,60 @@ void FileManager::file_handler(TollBooth d1, string &str1) {
         else if (i == 4) d1.cash_flow = stod(init_split[i]);
         else if (i == 5) d1.amount_of_workers = stoi(init_split[i]);
         else if (i == 6) d1.path_schedule = init_split[i];
+        else if (i == 7)
+        {
+            d1.tec_queue = read_tec_file(init_split[i]);
+            //read_file(init_split[i],3);
+        }
         else throw NotAMemberOf(n);
     }
     t_vec.push_back(d1);
 }
+
+priority_queue<Technician> FileManager::read_tec_file(string &file) {
+    ifstream infile(file.c_str(), ios::in);
+    string error = "Can't open the desired file";
+    priority_queue<Technician> temp_pq;
+    try
+    {
+        if( infile.is_open() )
+        {
+            string str;
+            getline(infile,str);
+            while( getline(infile,str) )
+            {
+                Technician temp = file_tec_handler(tec,str);
+                temp_pq.push(temp);
+            }
+        }
+        else throw CantOpenFile(error);
+    }
+    catch (CantOpenFile &e)
+    {
+        cerr << "An exception has been thrown: " << e.get_error() << endl;
+        exit(EXIT_FAILURE);
+    }
+    return temp_pq;
+}
+
+Technician FileManager::file_tec_handler(Technician &t1, string &str) {
+    vector<string> split = utilities->split_string(str,'|');
+    string error = "Technician";
+    for(int i = 0; i < split.size(); i++)
+    {
+        if( i == 0 ) t1.name = split[i];
+        else if( i == 1 ) t1.tec_id = stoi(split[i]);
+        else if( i == 2 ) t1.tec_type = stoi(split[i]);
+        else if( i == 3 ) t1.total_interventions = stoi(split[i]);
+        else if( i == 4 ) t1.tec_efficiency = stod(split[i]);
+        else if( i == 5 ) istringstream(split[i]) >> t1.working;
+        else if( i == 6 ) istringstream(split[i]) >> t1.available;
+        else throw NotAMemberOf(error);
+    }
+    cout << t1.get_name() << "||" << t1.get_efficiency() << endl;
+    return t1;
+}
+
 
 void FileManager::File_lane_handler(TollBooth &d1, int j,vector<string> &init_split){
     vector<string> split = utilities->split_string(init_split[j], '-');
@@ -130,6 +167,8 @@ void FileManager::file_handler(Worker &w1, string &str1) {
                     case 6:
                         w1.d_schedule.sunday = split_res2[j];
                         break;
+                    default:
+                        break;
                 }
             }
         }
@@ -166,6 +205,31 @@ void FileManager::file_handler(string &str1) {
    catch (NotVehicleClasse &exp){
        cerr << "An error has been raised: " << exp.get_error() << endl;
    }
+}
+
+void FileManager::file_handler(Intervention &int1, string &str) {
+    vector<string> split = utilities->split_string(str,'|');
+    Intervention inter;
+    string error = "Intervention";
+    for(int i = 0; i < split.size(); i++)
+    {
+        if( i == 0 ) inter.date = split[i];
+        else if ( i == 1 )
+        {
+            if(split[i] == "0") inter.type = 0;
+            else if (split[i] == "1") inter.type = 1;
+            else inter.type = 2;
+        }
+        else if ( i == 2 ) inter.inter_duration = split[i];
+        else if ( i == 3 ) inter.tec_worker; //!!!!
+        else if ( i == 4 ) inter.t_booth; //!!!!
+        else if ( i == 5)  {
+            inter.ongoing = ( split[i] == "YES") ? true : false;
+        }
+        else throw NotAMemberOf(error);
+    }
+    inter_vec.push_back(inter); //For the destructor
+
 }
 
 
@@ -263,4 +327,11 @@ FileManager::~FileManager() {
         delete *it;
     }
 }
+
+
+
+
+
+
+
 

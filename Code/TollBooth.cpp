@@ -13,21 +13,6 @@ string TollBooth::get_path() const {
     return this->path_schedule;
 }
 
-/// return the amount of workers in the tollbooth
-int TollBooth::get_a_workers() const {
-    return this->amount_of_workers;
-}
-
-/// total cash flow in the tollbooth
-double TollBooth::get_cash_flow() const {
-    return this->cash_flow;
-}
-
-/// return the number of existing lanes in the tollbooth
-int TollBooth::get_lanes() const {
-    return this->lanes;
-}
-
 /// return if the are exiting or entering an highway
 bool TollBooth::get_ent_exit() const {
     return this->entrance_exit;
@@ -36,11 +21,6 @@ bool TollBooth::get_ent_exit() const {
 /// return tollboth vector
 vector <TollBooth> TollBooth::get_Tvec() {
     return this->T_vector;
-}
-
-/// return a struct that contains information about the lanes
-TollBooth::lane_h TollBooth::get_laneh() const {
-    return this->lane_handler;
 }
 
 /// return a vector of lane_h structs
@@ -98,5 +78,20 @@ int TollBooth::search_t_vec(const vector <TollBooth> &t_vector, bool exit, basic
     catch (ElementNotInVec &exc){
         cerr << "An exception has been raised: " << exc.get_error() << endl;
         return -1;
+    }
+}
+
+priority_queue<Technician > TollBooth::get_pq_tec() {
+    return this->tec_queue;
+}
+
+void TollBooth::prio_teste() {
+    /*Technician *test = tec_queue.top();
+    cout << test->get_name();*/
+    cout << T_vector[0].tec_queue.size() << endl;
+    while ( !get_Tvec()[0].tec_queue.empty() )
+    {
+        cout << get_Tvec()[0].tec_queue.top().get_name() << endl;
+        T_vector[0].tec_queue.pop();
     }
 }

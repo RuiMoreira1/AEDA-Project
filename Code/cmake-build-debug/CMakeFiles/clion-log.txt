@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" "C:\Users\ruipe\OneDrive\Ambiente de Trabalho\AEDAPROJECT needed"
+"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" C:\Users\ruipe\OneDrive\Documentos\GitHub\Aeda_Proj_Part2\Code
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/ruipe/OneDrive/Ambiente de Trabalho/AEDAPROJECT needed/cmake-build-debug
+-- Build files have been written to: C:/Users/ruipe/OneDrive/Documentos/GitHub/Aeda_Proj_Part2/Code/cmake-build-debug
