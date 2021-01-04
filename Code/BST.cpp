@@ -58,18 +58,20 @@ void BST<T>::insert(T &newElement) {
 
 ///Recursive function that return the element based on the comparable or the empty Node
 template<class T>
-T BST<T>::find(Node<T> *node, T comparable) {
-    T empty;
-    if(node == nullptr) return empty;
+Node<T>* BST<T>::find(Node<T> *node, T comparable) {
+    if(node == nullptr) return nullptr;
     else if(node->getElement() < comparable) return find(node->right, comparable);
     else if (comparable < node->getElement()) return find(node->left, comparable);
-    else return node->getElement();
+    else return node;
 }
 
 ///BST find function with a comparable that returns the element or the empty Node
 template<class T>
 T BST<T>::find(T comparable) {
-    return find(root, comparable);
+    Node<T>* nodePtr = find(root, comparable);
+    T empty;
+    if(nodePtr == nullptr) return empty;
+    return nodePtr->node;
 }
 
 ///Recursively deallocate the nodes
@@ -78,6 +80,50 @@ void BST<T>::clearTree(Node<T> *nodeToClear) {
     if(nodeToClear->left != nullptr) clearTree(nodeToClear->left);
     if(nodeToClear->right != nullptr) clearTree(nodeToClear->right);
     delete nodeToClear;
+}
+
+///Find the minimum value in a tree
+template<class T>
+Node<T> * BST<T>::findMin(Node<T> *node) {
+    if(node->left == nullptr) return node;
+    else return findMin(node->left);
+}
+
+///Remove a element in a tree
+template<class T>
+void BST<T>::remove(T &Element) {
+    remove(root, Element);
+}
+
+///Remove a element in a tree with root node
+template<class T>
+Node<T> *BST<T>::remove(Node<T> *node, T comparable) {
+    if(node == nullptr) return node;
+    else if (node->getElement() < comparable) node->right = remove(node->right, comparable);
+    else if (comparable < node->getElement()) node->left = remove(node->left, comparable);
+
+    else{
+        if(node->left == nullptr && node->right == nullptr){
+            delete node;
+            return nullptr;
+        }
+        else if (node->left == nullptr){
+            Node<T>* tmp = node->right;
+            delete node;
+            return tmp;
+        }
+        else if (node->right == nullptr){
+            Node<T> *tmp = node->left;
+            delete node;
+            return tmp;
+        }
+        else{
+            node->node = findMin(node->right)->node;
+            remove(node->right, node->node);
+            return node;
+        }
+    }
+
 }
 
 ///Deconstructor clears the tree deallocating the nodes
@@ -127,5 +173,81 @@ void inOrderIterator<T>::advance() {
 ///Return true if the stack is empty
 template<class T>
 bool inOrderIterator<T>::isAtEnd() {
+    return binaryTree.empty();
+}
+
+///iterator constructor using a BST
+template<class T>
+preOrderIterator<T>::preOrderIterator(BST<T> &bst) {
+    if(bst.root != nullptr) copyBST(bst.root);
+}
+
+///Recursively travel through the BST in reverse of the pre order so the stack stays in order
+template<class T>
+void preOrderIterator<T>::copyBST(Node<T> *node) {
+    if(node->right != nullptr) copyBST(node->right);
+    if(node->left != nullptr) copyBST(node->left);
+    binaryTree.push(node->getElement());
+}
+
+///Advance iterator
+template<class T>
+void preOrderIterator<T>::advance() {
+    binaryTree.pop();
+}
+
+///Return the Element inside the top of the stack
+template<class T>
+T preOrderIterator<T>::retrieve() {
+    return binaryTree.top();
+}
+
+///Return the Element inside the top of the stack
+template<class T>
+T preOrderIterator<T>::operator*() {
+    return binaryTree.top();
+}
+
+///Return true if the stack is empty
+template<class T>
+bool preOrderIterator<T>::isAtEnd() {
+    return binaryTree.empty();
+}
+
+///iterator constructor using a BST
+template<class T>
+posOrderIterator<T>::posOrderIterator(BST<T> &bst) {
+    if(bst.root != nullptr) copyBST(bst.root);
+}
+
+///Recursively travel through the BST in reverse of the pos order so the stack stays in order
+template<class T>
+void posOrderIterator<T>::copyBST(Node<T> *node) {
+    binaryTree.push(node->getElement());
+    if(node->right != nullptr) copyBST(node->right);
+    if(node->left != nullptr) copyBST(node->left);
+}
+
+///Advance iterator
+template<class T>
+void posOrderIterator<T>::advance() {
+    binaryTree.pop();
+}
+
+///Return the Element inside the top of the stack
+template<class T>
+T posOrderIterator<T>::retrieve() {
+    return binaryTree.top();
+}
+
+///Return the Element inside the top of the stack
+template<class T>
+T posOrderIterator<T>::operator*() {
+    return binaryTree.top();
+}
+
+///Return true if the stack is empty
+template<class T>
+bool posOrderIterator<T>::isAtEnd() {
     return binaryTree.empty();
 }

@@ -2,6 +2,9 @@
 #include <stack>
 
 template<class T> class inOrderIterator;
+template<class T> class preOrderIterator;
+template<class T> class posOrderIterator;
+
 
 /**
  * class Node
@@ -11,8 +14,8 @@ template<class T> class inOrderIterator;
  */
 template <class T>
 class Node{
-    T node;
 public:
+    T node;
     Node* left;
     Node* right;
     Node();
@@ -31,14 +34,19 @@ template <class T>
 class BST {
 private:
     Node<T> *root;
-    T find(Node<T> *node, T comparable);
+    Node<T> *find(Node<T> *node, T comparable);
+    Node<T> *remove(Node<T> *node, T comparable);
+    Node<T> *findMin(Node<T> *node);
+    void clearTree(Node<T>* nodeToClear);
     friend class inOrderIterator<T>;
+    friend class preOrderIterator<T>;
+    friend class posOrderIterator<T>;
 public:
     BST();
     BST(T root);
     ~BST();
-    void clearTree(Node<T>* nodeToClear);
     void insert(T &newElement);
+    void remove(T &Element);
     T find(T comparable);
 };
 
@@ -57,3 +65,36 @@ public:
     T operator *();
     bool isAtEnd();
 };
+
+/**
+ * class preOrderIterator - iterator to a binary tree in pre order
+ * @param binaryTree - stack on witch the tree is stored
+ */
+template<class T>
+class preOrderIterator{
+    std::stack<T> binaryTree;
+    void copyBST(Node<T> *node);
+public:
+    preOrderIterator(BST<T> &bst);
+    void advance();
+    T retrieve();
+    T operator *();
+    bool isAtEnd();
+};
+
+/**
+ * class posOrderIterator - iterator to a binary tree in pos order
+ * @param binaryTree - stack on witch the tree is stored
+ */
+template<class T>
+class posOrderIterator{
+    std::stack<T> binaryTree;
+    void copyBST(Node<T> *node);
+public:
+    posOrderIterator(BST<T> &bst);
+    void advance();
+    T retrieve();
+    T operator *();
+    bool isAtEnd();
+};
+
